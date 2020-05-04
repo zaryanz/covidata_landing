@@ -423,6 +423,9 @@ a.pure-button-primary {
   .mobile-button {
     display: block;
   }
+  .btn-text {
+    font-size: 14px;
+  }
 }
 
 @media (max-height: 740px) {
