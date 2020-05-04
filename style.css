@@ -8,8 +8,8 @@
 
 .mobile-button {
   display: none;
-  margin: 0 auto;
-  margin-top: 1em;
+  margin: auto auto;
+  /* margin-top: 1em; */
 }
 
 .btn-text {
@@ -368,7 +368,10 @@ a.pure-button-primary {
 
 @media (min-width: 1920px) {
   .content-wrapper {
-    top: 70%;
+    top: 80%;
+  }
+  .mockup {
+    margin-top: 5em;
   }
 }
 @media (max-width: 1255px) {
@@ -424,10 +427,13 @@ a.pure-button-primary {
 
 @media (max-height: 740px) {
   .phone-mockup {
-    max-width: 200px;
+    max-width: 250px;
     width: auto;
     height: auto;
     /* display: none; */
+  }
+  .content-wrapper {
+    top: 70%;
   }
 }
 
