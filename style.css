@@ -6,13 +6,46 @@
   padding: 0;
 }
 
+.mobile-button {
+  display: none;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.btn-text {
+  display: inline;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main-btn {
+  animation-duration: 0.7s;
+  animation-delay: 0.05s;
+}
+
+.main-heading {
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  animation-duration: 0.7s;
+  animation-delay: 0.05s;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Incolasta", monospace;
+}
+
 .mockup {
-  margin-left: 10rem;
+  margin-left: 7rem;
+}
+
+.features {
+  margin: auto 0 auto 28rem;
+  width: 20%;
+  color: #fff;
 }
 
 .phone-mockup {
   display: block;
-  max-width: 300px;
+  max-width: 350px;
   /* max-height: 95px; */
   width: auto;
   height: auto;
@@ -52,6 +85,7 @@ body {
   line-height: 1.7em;
   color: #7f8c8d;
   font-size: 13px;
+  font-family: "Incolasta", monospace;
 }
 
 .title {
@@ -325,9 +359,92 @@ a.pure-button-primary {
  * On desktops and other large devices, we want to over-ride some
  * of the mobile and tablet styles.
  */
-@media (min-width: 78em) {
-  /* We increase the header font size even more */
+/* @media (min-width: 78em) {
+  
   .splash-head {
     font-size: 300%;
+  }
+} */
+
+@media (min-width: 1920px) {
+  .content-wrapper {
+    top: 70%;
+  }
+}
+@media (max-width: 1255px) {
+  .features {
+    margin-left: 17rem;
+  }
+  .main-heading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .main-heading {
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+  .phone-mockup {
+    max-width: 270px;
+    width: auto;
+    height: auto;
+    /* display: none; */
+  }
+}
+
+@media (max-width: 910px) {
+  .features {
+    margin-left: 12rem;
+  }
+  .main-heading {
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .splash-container {
+    flex-direction: column;
+  }
+  .features {
+    display: none;
+  }
+  .mockup {
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+  .content-wrapper {
+    top: 75%;
+  }
+  .mobile-button {
+    display: block;
+  }
+}
+
+@media (max-height: 740px) {
+  .phone-mockup {
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    /* display: none; */
+  }
+}
+
+@media (max-height: 600px) {
+  .phone-mockup {
+    max-width: 160px;
+    width: auto;
+    height: auto;
+    /* display: none; */
+  }
+}
+
+@media (max-height: 520px) {
+  .phone-mockup {
+    max-width: 140px;
+    width: auto;
+    height: auto;
+    /* display: none; */
   }
 }
