@@ -12,6 +12,10 @@
   /* margin-top: 1em; */
 }
 
+.home-menu {
+  padding: 0.25em !important;
+}
+
 .btn-text {
   display: inline;
   font-size: 20px;
@@ -398,11 +402,21 @@ a.pure-button-primary {
 
 @media (max-width: 910px) {
   .features {
-    margin-left: 12rem;
+    margin-left: 8rem;
   }
   .main-heading {
     font-size: 22px;
     margin-bottom: 1rem;
+  }
+  .mockup {
+    margin-left: 8em;
+    margin-top: 5em;
+  }
+  .phone-mockup {
+    max-width: 250px;
+    width: auto;
+    height: auto;
+    /* display: none; */
   }
 }
 
@@ -422,13 +436,29 @@ a.pure-button-primary {
   }
   .mobile-button {
     display: block;
+    margin-right: 1px;
+    margin-left: auto;
   }
   .btn-text {
     font-size: 13px;
   }
+  .home-menu {
+    padding: 0 !important;
+  }
+  .my-btn {
+    margin-right: 2px !important;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+  }
 }
 
-@media (max-height: 740px) {
+@media (max-width: 400px) {
+  .btn-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-height: 770px) {
   .phone-mockup {
     max-width: 250px;
     width: auto;
@@ -437,6 +467,18 @@ a.pure-button-primary {
   }
   .content-wrapper {
     top: 70%;
+  }
+  .mobile-button {
+    display: block;
+    margin-right: 1em;
+    margin-left: auto;
+  }
+  .features {
+    display: none;
+  }
+  .mockup {
+    margin: 0 auto;
+    margin-top: 1em;
   }
 }
 
